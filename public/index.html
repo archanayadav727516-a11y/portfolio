@@ -1,43 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Archana Portfolio</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <!-- <h2 class="logo">Archana.</h2> -->
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>Hello, I'm <span>Archana</span></h1>
+
+      <h3>Frontend Developer</h3>
+
+      <p>
+        I create modern and responsive websites using
+        HTML, CSS, JavaScript and React.
+      </p>
+<a href="/Image/CV.pdf" download>
+   <button>Download CV</button>
+</a>
+    
+
+    </div>
+
+    <!-- Profile Image -->
+    <div class="hero-image">
+      <img src="Image/2.jpg" alt="profile">
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section calss="about" id="about">
+
+    <h2>About Me</h2>
+<div class="about-content">
+    <h3>
+  BCA Final Year Student | Frontend Developer
+    </h3>
+    <p>
+      Hi, I 'm
+      <span>Archana yadav</span>,
+      passionate about Web developer, I have creating responsive and user-friendly applications.
+<br><br>
+ I enjoy building responsive websites,
+                solving technical problems and working
+                on real-world IT projects.
+                <br><br>
+
+    Dedicated to enhancing technical skills and building
+  a successful career in the IT industry.
+  </p> 
+</div>
+  </section>
+
+  <!-- Skills -->
+ <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="card"
+                >
+                HTML5
+            </div>
+
+            <div class="card"
+                 >
+                CSS3
+            </div>
+
+            <div class="card"
+               > 
+                JavaScript
+            </div>
+ <div class="card"
+                 > 
+                React Js
+            </div>
+          <div class="card">
+               
+                Shopify
+            </div>
+
+    </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio using HTML5 & CSS3.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Todo List</h3>
+        <p>Task management app using JavaScript.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Food Recipe project</h3>
+        <p>Shopping website frontend design.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+   <!-- Social Links -->
+
+    <div class="social-links">
+
+
+        <!-- GitHub -->
+
+        <a href="https://github.com/archanayadav727516-a11y"
+           target="_blank">
+
+            💻 GitHub
+
+        </a>
+
+
+
+        <!-- LinkedIn -->
+
+        <a href="https://www.linkedin.com/in/archana-893284345"
+           target="_blank">
+
+            🔗 LinkedIn
+
+        </a>
+        <!-- Call -->
+
+        <a href="tel:+917042681947">
+
+            ☎ Call Me
+
+        </a>
+
+        <!-- Email -->
+
+        <a href="mailto:archanayadav727516@gmail.com">
+
+            📧 Email Me
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Archana Portfolio</p>
+  </footer>
+
+</body>
 </html>
+  
+
