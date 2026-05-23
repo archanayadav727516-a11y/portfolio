@@ -1,0 +1,4 @@
+[build]
+  base = "port"
+  command = "npm run build"
+  publish = "build"
