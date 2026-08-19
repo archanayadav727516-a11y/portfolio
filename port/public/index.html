@@ -1,182 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Archana Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+    <title>Archana Yadav | Frontend Developer</title>
+
+    <meta
+        name="description"
+        content="Archana Yadav - Frontend Developer Portfolio"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <!-- <h2 class="logo">Archana.</h2> -->
+<!-- =====================================================
+     NAVBAR — styled as editor file tabs
+====================================================== -->
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>Archana<span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-tabs" id="nav-links">
+
+            <li class="tab" data-accent="indigo">
+                <a href="#home"><span class="tab-dot"></span>home<span class="tab-ext">.html</span></a>
+            </li>
+
+            <li class="tab" data-accent="amber">
+                <a href="#about"><span class="tab-dot"></span>about<span class="tab-ext">.md</span></a>
+            </li>
+
+            <li class="tab" data-accent="teal">
+                <a href="#skills"><span class="tab-dot"></span>skills<span class="tab-ext">.json</span></a>
+            </li>
+
+            <li class="tab" data-accent="indigo">
+                <a href="#projects"><span class="tab-dot"></span>projects<span class="tab-ext">.jsx</span></a>
+            </li>
+
+            <li class="tab" data-accent="rose">
+                <a href="#contact"><span class="tab-dot"></span>contact<span class="tab-ext">.txt</span></a>
+            </li>
+
+        </ul>
+
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
+</header>
 
-    <div class="hero-text">
 
-      <h1>Hello, I'm <span>Archana</span></h1>
+<!-- =====================================================
+     HERO
+====================================================== -->
 
-      <h3>Frontend Developer</h3>
+<section class="hero" id="home">
 
-      <p>
-        I create modern and responsive websites using
-        HTML, CSS, JavaScript and React.
-      </p>
-<a href="/Image/CV.pdf" download>
-   <button>Download CV</button>
-</a>
-    
+    <div class="hero-container">
+
+        <div class="hero-text">
+
+            <p class="hero-comment">// frontend developer, based in India</p>
+
+            <h1>
+                Hi, I'm<br>
+                <span>Archana Yadav</span>
+            </h1>
+
+            <h2 class="hero-role">Frontend Developer</h2>
+
+            <p class="hero-description">
+                I build fast, responsive and user-friendly web
+                applications with HTML, CSS, JavaScript and ReactJS —
+                and round things out with Node.js on the backend
+                when a project needs it.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="Image/CV.pdf" download class="btn btn-primary">
+                    <span class="btn-icon">↓</span> Download CV
+                </a>
+
+                <a href="#projects" class="btn btn-ghost">
+                    View Projects <span class="btn-icon">→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="browser-frame">
+
+                <div class="browser-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-amber"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="browser-title">archana.dev</span>
+                </div>
+
+                <div class="browser-body">
+                    <img src="Image/2.png" alt="Archana Yadav - Frontend Developer">
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <!-- Profile Image -->
-    <div class="hero-image">
-      <img src="Image/2.jpg" alt="profile">
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+
+<section class="about section" id="about">
+
+    <div class="section-head" data-accent="amber">
+        <span class="section-tag">&lt;About /&gt;</span>
+        <h2>Get to know me</h2>
     </div>
 
-  </section>
+    <div class="about-content">
 
-  <!-- About -->
-  <section calss="about" id="about">
+        <h3>BCA Final Year Student · Frontend Developer</h3>
 
-    <h2>About Me</h2>
-<div class="about-content">
-    <h3>
-  BCA Final Year Student | Frontend Developer
-    </h3>
-    <p>
-      Hi, I 'm
-      <span>Archana yadav</span>,
-      passionate about Web developer, I have creating responsive and user-friendly applications.
-<br><br>
- I enjoy building responsive websites,
-                solving technical problems and working
-                on real-world IT projects.
-                <br><br>
+        <p>
+            Hi, I'm <span class="highlight">Archana Yadav</span>, a
+            passionate frontend developer focused on creating modern,
+            responsive and user-friendly web applications.
+        </p>
 
-    Dedicated to enhancing technical skills and building
-  a successful career in the IT industry.
-  </p> 
-</div>
-  </section>
+        <p>
+            I enjoy building responsive websites, solving technical
+            problems and working on real-world IT projects.
+        </p>
 
-  <!-- Skills -->
- <section class="skills" id="skills">
+        <p>
+            I am continuously improving my technical skills and
+            looking forward to building a successful career in the
+            IT industry.
+        </p>
 
-        <h2>My Skills</h2>
+    </div>
 
-        <div class="skill-box">
+</section>
 
-            <div class="card"
-                >
-                HTML5
+
+<!-- =====================================================
+     SKILLS
+====================================================== -->
+
+<section class="skills section" id="skills">
+
+    <div class="section-head" data-accent="teal">
+        <span class="section-tag">&lt;Skills /&gt;</span>
+        <h2>Technical skills</h2>
+    </div>
+
+    <div class="skill-groups">
+
+        <div class="skill-group">
+
+            <p class="skill-group-label">// frontend</p>
+
+            <div class="skill-chips">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">ReactJS</span>
+                <span class="chip">Responsive Design</span>
             </div>
 
-            <div class="card"
-                 >
-                CSS3
+        </div>
+
+        <div class="skill-group">
+
+            <p class="skill-group-label">// backend &amp; data</p>
+
+            <div class="skill-chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express.js</span>
+                <span class="chip">MongoDB</span>
             </div>
 
-            <div class="card"
-               > 
-                JavaScript
-            </div>
- <div class="card"
-                 > 
-                React Js
-            </div>
-          <div class="card">
-               
-                Shopify
+        </div>
+
+        <div class="skill-group">
+
+            <p class="skill-group-label">// tools &amp; deploy</p>
+
+            <div class="skill-chips">
+                <span class="chip">Git</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">VS Code</span>
+                <span class="chip">Vercel</span>
+                <span class="chip">Netlify</span>
+                <span class="chip">Shopify</span>
             </div>
 
-    </section>
+        </div>
 
-  <!-- Projects -->
-  <section id="projects" class="projects">
+    </div>
 
-    <h2>Projects</h2>
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+====================================================== -->
+
+<section id="projects" class="projects section">
+
+    <div class="section-head" data-accent="indigo">
+        <span class="section-tag">&lt;Projects /&gt;</span>
+        <h2>Recent work</h2>
+    </div>
 
     <div class="project-container">
 
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Responsive portfolio using HTML5 & CSS3.</p>
-      </div>
+        <!-- PROJECT 01 -->
 
-      <div class="project-card">
-        <h3>Todo List</h3>
-        <p>Task management app using JavaScript.</p>
-      </div>
+        <article class="project-card">
 
-      <div class="project-card">
-        <h3>Food Recipe project</h3>
-        <p>Shopping website frontend design.</p>
-      </div>
+            <div class="project-titlebar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+                <span class="project-path">~/portfolio</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website showcasing
+                    my skills, projects and frontend development
+                    journey.
+                </p>
+
+                <div class="project-tags">
+                    <span class="code-tag">HTML5</span>
+                    <span class="code-tag">CSS3</span>
+                    <span class="code-tag">JavaScript</span>
+                    <span class="code-tag">Responsive</span>
+                </div>
+
+                <a
+                    href="https://archana7275-portfolio.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    $ open live-portfolio →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- PROJECT 02 -->
+
+        <article class="project-card">
+
+            <div class="project-titlebar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+                <span class="project-path">~/directory-manager</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>Directory Management System</h3>
+
+                <p>
+                    A responsive directory management application
+                    implementing CRUD operations to create, read,
+                    update and delete records.
+                </p>
+
+                <div class="project-tags">
+                    <span class="code-tag">ReactJS</span>
+                    <span class="code-tag">JavaScript</span>
+                    <span class="code-tag">CSS</span>
+                    <span class="code-tag">React Hooks</span>
+                    <span class="code-tag">CRUD</span>
+                </div>
+
+                <a
+                    href="https://directory-olive-six.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    $ open directory-manager →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- PROJECT 03 -->
+
+        <article class="project-card">
+
+            <div class="project-titlebar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+                <span class="project-path">~/glamtap</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>GlamTap – Salon &amp; Beauty Platform</h3>
+
+                <p>
+                    A full-stack salon and beauty service platform
+                    with service browsing, booking flow, cart
+                    functionality and responsive UI.
+                </p>
+
+                <div class="project-tags">
+                    <span class="code-tag">ReactJS</span>
+                    <span class="code-tag">Tailwind CSS</span>
+                    <span class="code-tag">Node.js</span>
+                    <span class="code-tag">Express.js</span>
+                    <span class="code-tag">MongoDB</span>
+                </div>
+
+                <a
+                    href="https://glamtap.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    $ open glamtap →
+                </a>
+
+            </div>
+
+        </article>
 
     </div>
 
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-
-    <h2>Contact Me</h2>
-
-   <!-- Social Links -->
-
-    <div class="social-links">
+</section>
 
 
-        <!-- GitHub -->
+<!-- =====================================================
+     CONTACT
+====================================================== -->
 
-        <a href="https://github.com/archanayadav727516-a11y"
-           target="_blank">
+<section id="contact" class="contact section">
 
-            💻 GitHub
+    <div class="section-head center" data-accent="rose">
+        <span class="section-tag">&lt;Contact /&gt;</span>
+        <h2>Let's connect</h2>
+    </div>
 
+    <p class="contact-text">
+        I'm open to frontend development opportunities, internships
+        and exciting projects.
+    </p>
+
+    <div class="terminal-links">
+
+        <a
+            href="https://github.com/archanayadav727516-a11y"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="terminal-link"
+        >
+            <span class="prompt">$</span> open github
         </a>
 
-
-
-        <!-- LinkedIn -->
-
-        <a href="https://www.linkedin.com/in/archana-893284345"
-           target="_blank">
-
-            🔗 LinkedIn
-
-        </a>
-        <!-- Call -->
-
-        <a href="tel:+917042681947">
-
-            ☎ Call Me
-
+        <a
+            href="https://www.linkedin.com/in/archana-893284345"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="terminal-link"
+        >
+            <span class="prompt">$</span> open linkedin
         </a>
 
-        <!-- Email -->
+        <a href="tel:+917042681947" class="terminal-link">
+            <span class="prompt">$</span> call --now
+        </a>
 
-        <a href="mailto:archanayadav727516@gmail.com">
-
-            📧 Email Me
-
+        <a href="mailto:archanayadav727516@gmail.com" class="terminal-link">
+            <span class="prompt">$</span> mail --send
         </a>
 
     </div>
@@ -184,13 +428,22 @@
 </section>
 
 
+<!-- =====================================================
+     FOOTER
+====================================================== -->
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Archana Portfolio</p>
-  </footer>
+<footer class="footer">
+
+    <div class="footer-bar">
+        <span>UTF-8</span>
+        <span>Built with HTML · CSS · JavaScript</span>
+        <span>© 2026 Archana Yadav</span>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-</html>
-  
 
+</html>
